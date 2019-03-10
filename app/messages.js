@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Get id mess')
+    res.send('Get mess')
 });
 
 router.get('/:id', (req, res) => {
@@ -12,3 +12,5 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     res.send('mess post')
 });
+
+module.exports = router;
